@@ -48,10 +48,14 @@ video {
 }
 
 .brand {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo {
+  display: block;
+  max-height: 44px;
+  width: auto;
 }
 
 .menu-toggle {

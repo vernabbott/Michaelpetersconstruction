@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60" role="img" aria-label="Mike Peters Construction logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5ba45"/>
+      <stop offset="100%" stop-color="#f08a21"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="60" rx="14" fill="#111" />
+  <text x="12" y="28" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#fff" font-weight="700">MIKE</text>
+  <text x="12" y="48" font-family="Inter, system-ui, sans-serif" font-size="14" fill="url(#g)" font-weight="700">PETERS CONSTRUCTION</text>
+</svg>

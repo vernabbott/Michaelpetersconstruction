@@ -9,12 +9,23 @@
   <body>
     <header class="site-header">
       <div class="brand">Michael Peters Construction</div>
-      <nav class="site-nav">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="mobile-nav" id="mobile-nav" hidden>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </header>
 
     <section class="hero">
@@ -148,5 +159,16 @@
     <footer class="site-footer">
       <p>© 2026 Michael Peters Construction. Proudly serving Florida homeowners with premium construction services.</p>
     </footer>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+      menuToggle?.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        if (mobileNav) {
+          mobileNav.hidden = expanded;
+        }
+      });
+    </script>
   </body>
 </html>
